@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using System.Data.Linq;
 
 namespace GUI
 {
-    public partial class UserControl1 : UserControl
+    public partial class Control_TaiKhoan : UserControl
     {
-        public UserControl1()
+        public Control_TaiKhoan()
         {
             InitializeComponent();
+           
         }
+
+       
     }
 }

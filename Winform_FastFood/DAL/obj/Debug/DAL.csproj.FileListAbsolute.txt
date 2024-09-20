@@ -1,0 +1,10 @@
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\bin\Debug\DAL.dll
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\bin\Debug\DAL.pdb
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\obj\Debug\DAL.dll
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\obj\Debug\DAL.pdb
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\bin\Debug\DTO.dll
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\bin\Debug\DTO.pdb
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\bin\Debug\DTO.dll.config
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

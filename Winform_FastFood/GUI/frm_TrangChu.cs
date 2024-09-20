@@ -16,18 +16,17 @@ namespace GUI
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            bnt_Menu_NhanVien.Click += Bnt_Menu_NhanVien_Click;
+          
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Bnt_Menu_NhanVien_Click(object sender, EventArgs e)
         {
-
+            var control_nhanvien = new Control_NhanVien();
+            Panel_Body.Controls.Clear();
+            Panel_Body.Controls.Add(control_nhanvien);
+            bnt_Menu_NhanVien.BackColor = Color.White;
         }
-
-        //private void Button1_Click(object sender, EventArgs e)
-        //{
-        //    var usercontrol = new UserControl1();
-        //    panel2.Controls.Clear();
-        //    panel2.Controls.Add(usercontrol);
-        //}
     }
 }

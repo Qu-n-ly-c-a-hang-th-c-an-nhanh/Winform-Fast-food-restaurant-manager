@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.875" name="FastFood">
+  <DataContextMoniker Name="/FastFoodDataContext" />
+  <nestedChildShapes>
+    <classShape Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" absoluteBounds="6.25, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/FastFoodDataContext/ChiTietDonDatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9da3cb17-939c-4e93-ba7a-32573bd3086b" absoluteBounds="6.265, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3010c1f8-b6d6-4d01-beff-ea5d93793a99" absoluteBounds="6.25, 7, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/FastFoodDataContext/ThanhToan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85f5603e-5513-4761-9d5f-4209b23d7c9f" absoluteBounds="6.265, 7.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08dbcb84-e597-463d-bdf8-0e70ab4b86ca" absoluteBounds="0.75, 3, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/FastFoodDataContext/DanhMucMonAn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be5c465e-4f00-4015-b5bd-ca3f0e20d96d" absoluteBounds="0.765, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb9da5d0-8e7e-407a-9635-6ac92db5cbe7" absoluteBounds="6.25, 9.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/FastFoodDataContext/DoanhThu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2256a30c-ac86-465c-bfe9-c770e6d74ca2" absoluteBounds="6.265, 9.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" absoluteBounds="3.5, 5.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/FastFoodDataContext/DonDatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82ccb7fe-8d91-4dea-b6e2-11c89b7e0075" absoluteBounds="3.515, 6.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3062d3fb-158f-48a3-ab3c-b25cc1805ce0" absoluteBounds="0.75, 5.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FastFoodDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76abe3d4-9c8b-4676-870a-e2e95ada34a4" absoluteBounds="0.765, 5.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="253dd031-ef1e-4886-b828-a093c3b2d33f" absoluteBounds="6.25, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/FastFoodDataContext/Kho" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa50f750-7645-428a-a225-973bb2ffad54" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" absoluteBounds="3.5, 2.625, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/FastFoodDataContext/MonAn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c2467c8-3a31-4a3d-9c14-d0ba60566187" absoluteBounds="3.515, 3.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e19e028-7712-4620-a0e2-70607bcac1c1" absoluteBounds="3.5, 12.625, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/FastFoodDataContext/NhaCungCap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6976a411-afc8-4a30-861c-9545bc126dd2" absoluteBounds="3.515, 13.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d53fc4bd-0dc3-48fd-aa5f-7de67a79adfe" absoluteBounds="0.75, 8.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FastFoodDataContext/nhanvien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5f52870-50a7-42cd-816b-db394bb5222e" absoluteBounds="0.765, 9.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.75); (5.875 : 5.375); (5.875 : 5.89589680989583); (6.00357443490112 : 5.76732237499471 : JumpStart); (6.12142556509888 : 5.64947124479695 : JumpEnd); (6.25 : 5.52089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FastFoodDataContext/DonDatHang/DonDatHang_ChiTietDonDatHang" />
+      <nodes>
+        <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
+        <classShapeMoniker Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.26044840494792); (5.97916666666667 : 7.26044840494792 : JumpStart); (6.14583333333333 : 7.26044840494792 : JumpEnd); (6.25 : 7.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/DonDatHang/DonDatHang_ThanhToan" />
+      <nodes>
+        <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
+        <classShapeMoniker Id="3010c1f8-b6d6-4d01-beff-ea5d93793a99" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 7.52089680989583); (4.5 : 10.3854484049479); (5.97916666666667 : 10.3854484049479 : JumpStart); (6.14583333333333 : 10.3854484049479 : JumpEnd); (6.25 : 10.3854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/DonDatHang/DonDatHang_DoanhThu" />
+      <nodes>
+        <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
+        <classShapeMoniker Id="eb9da5d0-8e7e-407a-9635-6ac92db5cbe7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.63544840494792); (3.5 : 6.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/KhachHang/KhachHang_DonDatHang" />
+      <nodes>
+        <classShapeMoniker Id="3062d3fb-158f-48a3-ab3c-b25cc1805ce0" />
+        <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.16909912109375); (5.97916666666667 : 4.16909912109375 : JumpStart); (6.14583333333333 : 4.16909912109375 : JumpEnd); (6.25 : 4.16909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/MonAn/MonAn_ChiTietDonDatHang" />
+      <nodes>
+        <classShapeMoniker Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" />
+        <classShapeMoniker Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 2.625); (4.5 : 1.63544840494792); (6.25 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/MonAn/MonAn_Kho" />
+      <nodes>
+        <classShapeMoniker Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" />
+        <classShapeMoniker Id="253dd031-ef1e-4886-b828-a093c3b2d33f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.69314697265625); (3.5 : 3.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/DanhMucMonAn/DanhMucMonAn_MonAn" />
+      <nodes>
+        <classShapeMoniker Id="08dbcb84-e597-463d-bdf8-0e70ab4b86ca" />
+        <classShapeMoniker Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.6869152522536); (6.0625 : 12.1244152522536); (6.0625 : 2.10942460742187); (6.25 : 2.10942460742187)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FastFoodDataContext/NhaCungCap/NhaCungCap_Kho" />
+      <nodes>
+        <classShapeMoniker Id="2e19e028-7712-4620-a0e2-70607bcac1c1" />
+        <classShapeMoniker Id="253dd031-ef1e-4886-b828-a093c3b2d33f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
