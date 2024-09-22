@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_TrangChu));
             this.Panel_Body = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bnt_Menu_NhanVien = new System.Windows.Forms.Button();
             this.bnt_Menu_TaiKhoan = new System.Windows.Forms.Button();
             this.bnt_Menu_DoanhThu = new System.Windows.Forms.Button();
             this.bnt_Menu_KhachHang = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.bnt_Menu_TrangChu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bnt_Menu_NhanVien = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 583);
             this.panel1.TabIndex = 2;
+            // 
+            // bnt_Menu_NhanVien
+            // 
+            this.bnt_Menu_NhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
+            this.bnt_Menu_NhanVien.FlatAppearance.BorderSize = 0;
+            this.bnt_Menu_NhanVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AntiqueWhite;
+            this.bnt_Menu_NhanVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bnt_Menu_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_Menu_NhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bnt_Menu_NhanVien.ForeColor = System.Drawing.Color.Black;
+            this.bnt_Menu_NhanVien.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Menu_NhanVien.Image")));
+            this.bnt_Menu_NhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Menu_NhanVien.Location = new System.Drawing.Point(0, 514);
+            this.bnt_Menu_NhanVien.Name = "bnt_Menu_NhanVien";
+            this.bnt_Menu_NhanVien.Size = new System.Drawing.Size(160, 43);
+            this.bnt_Menu_NhanVien.TabIndex = 9;
+            this.bnt_Menu_NhanVien.Text = "Nhân viên";
+            this.bnt_Menu_NhanVien.UseVisualStyleBackColor = false;
             // 
             // bnt_Menu_TaiKhoan
             // 
@@ -217,24 +235,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // bnt_Menu_NhanVien
-            // 
-            this.bnt_Menu_NhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
-            this.bnt_Menu_NhanVien.FlatAppearance.BorderSize = 0;
-            this.bnt_Menu_NhanVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AntiqueWhite;
-            this.bnt_Menu_NhanVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bnt_Menu_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_Menu_NhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bnt_Menu_NhanVien.ForeColor = System.Drawing.Color.Black;
-            this.bnt_Menu_NhanVien.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Menu_NhanVien.Image")));
-            this.bnt_Menu_NhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bnt_Menu_NhanVien.Location = new System.Drawing.Point(0, 514);
-            this.bnt_Menu_NhanVien.Name = "bnt_Menu_NhanVien";
-            this.bnt_Menu_NhanVien.Size = new System.Drawing.Size(160, 43);
-            this.bnt_Menu_NhanVien.TabIndex = 9;
-            this.bnt_Menu_NhanVien.Text = "Nhân viên";
-            this.bnt_Menu_NhanVien.UseVisualStyleBackColor = false;
             // 
             // frm_TrangChu
             // 

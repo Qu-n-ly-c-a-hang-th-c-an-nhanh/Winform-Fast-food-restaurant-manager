@@ -13,7 +13,6 @@ D:\New folder\Winform_FastFood\GUI\obj\Debug\GUI.UserControl1.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\bin\Debug\GUI.exe.config
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\bin\Debug\GUI.exe
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\bin\Debug\GUI.pdb
-D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.frm_DangNhap.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.frm_TrangChu.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Properties.Resources.resources

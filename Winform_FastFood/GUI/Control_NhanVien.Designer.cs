@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Control_NhanVien));
-            this.GRV_NhanVien = new System.Windows.Forms.DataGridView();
+            this.datagv_NhanVien = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_TenDangNhapNV = new System.Windows.Forms.TextBox();
             this.txt_MatKhauNV = new System.Windows.Forms.TextBox();
             this.txt_LuongNhanVien = new System.Windows.Forms.TextBox();
-            this.txt_PhanQuyenNV = new System.Windows.Forms.TextBox();
-            this.txt_ChucvuNV = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_TenNhanVien = new System.Windows.Forms.TextBox();
@@ -44,29 +42,35 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grb_TimKiem = new System.Windows.Forms.GroupBox();
+            this.pic_TimKiem = new System.Windows.Forms.PictureBox();
+            this.txt_TimKiem = new System.Windows.Forms.TextBox();
+            this.grb_Congcu = new System.Windows.Forms.GroupBox();
             this.bnt_TaiLaiNV = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bnt_Sua = new System.Windows.Forms.Button();
+            this.bnt_Xoa = new System.Windows.Forms.Button();
             this.bnt_ThemNV = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.GRV_NhanVien)).BeginInit();
+            this.bnt_XacNhan_Them = new System.Windows.Forms.Button();
+            this.bnt_Huy_Them = new System.Windows.Forms.Button();
+            this.bnt_XacNhan_Sua = new System.Windows.Forms.Button();
+            this.bnt_Huy_Sua = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.datagv_NhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.grb_TimKiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_TimKiem)).BeginInit();
+            this.grb_Congcu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // GRV_NhanVien
+            // datagv_NhanVien
             // 
-            this.GRV_NhanVien.BackgroundColor = System.Drawing.Color.White;
-            this.GRV_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GRV_NhanVien.Location = new System.Drawing.Point(14, 185);
-            this.GRV_NhanVien.Name = "GRV_NhanVien";
-            this.GRV_NhanVien.Size = new System.Drawing.Size(784, 253);
-            this.GRV_NhanVien.TabIndex = 2;
+            this.datagv_NhanVien.BackgroundColor = System.Drawing.Color.White;
+            this.datagv_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagv_NhanVien.Location = new System.Drawing.Point(14, 227);
+            this.datagv_NhanVien.Name = "datagv_NhanVien";
+            this.datagv_NhanVien.Size = new System.Drawing.Size(784, 253);
+            this.datagv_NhanVien.TabIndex = 2;
             // 
             // label1
             // 
@@ -80,11 +84,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.bnt_Huy_Sua);
+            this.groupBox1.Controls.Add(this.bnt_XacNhan_Sua);
+            this.groupBox1.Controls.Add(this.bnt_Huy_Them);
+            this.groupBox1.Controls.Add(this.bnt_XacNhan_Them);
             this.groupBox1.Controls.Add(this.txt_TenDangNhapNV);
             this.groupBox1.Controls.Add(this.txt_MatKhauNV);
             this.groupBox1.Controls.Add(this.txt_LuongNhanVien);
-            this.groupBox1.Controls.Add(this.txt_PhanQuyenNV);
-            this.groupBox1.Controls.Add(this.txt_ChucvuNV);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_TenNhanVien);
@@ -94,7 +102,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(6, 44);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(800, 126);
+            this.groupBox1.Size = new System.Drawing.Size(800, 159);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
@@ -119,20 +127,6 @@
             this.txt_LuongNhanVien.Name = "txt_LuongNhanVien";
             this.txt_LuongNhanVien.Size = new System.Drawing.Size(164, 20);
             this.txt_LuongNhanVien.TabIndex = 25;
-            // 
-            // txt_PhanQuyenNV
-            // 
-            this.txt_PhanQuyenNV.Location = new System.Drawing.Point(613, 76);
-            this.txt_PhanQuyenNV.Name = "txt_PhanQuyenNV";
-            this.txt_PhanQuyenNV.Size = new System.Drawing.Size(164, 20);
-            this.txt_PhanQuyenNV.TabIndex = 24;
-            // 
-            // txt_ChucvuNV
-            // 
-            this.txt_ChucvuNV.Location = new System.Drawing.Point(363, 76);
-            this.txt_ChucvuNV.Name = "txt_ChucvuNV";
-            this.txt_ChucvuNV.Size = new System.Drawing.Size(164, 20);
-            this.txt_ChucvuNV.TabIndex = 23;
             // 
             // label6
             // 
@@ -195,46 +189,46 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Mật khẩu";
             // 
-            // groupBox2
+            // grb_TimKiem
             // 
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Location = new System.Drawing.Point(14, 458);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(239, 80);
-            this.groupBox2.TabIndex = 15;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tìm kiếm theo tên người dùng";
+            this.grb_TimKiem.Controls.Add(this.pic_TimKiem);
+            this.grb_TimKiem.Controls.Add(this.txt_TimKiem);
+            this.grb_TimKiem.Location = new System.Drawing.Point(14, 486);
+            this.grb_TimKiem.Name = "grb_TimKiem";
+            this.grb_TimKiem.Size = new System.Drawing.Size(239, 80);
+            this.grb_TimKiem.TabIndex = 15;
+            this.grb_TimKiem.TabStop = false;
+            this.grb_TimKiem.Text = "Tìm kiếm theo tên người dùng";
             // 
-            // pictureBox1
+            // pic_TimKiem
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(189, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.pic_TimKiem.Image = ((System.Drawing.Image)(resources.GetObject("pic_TimKiem.Image")));
+            this.pic_TimKiem.Location = new System.Drawing.Point(189, 26);
+            this.pic_TimKiem.Name = "pic_TimKiem";
+            this.pic_TimKiem.Size = new System.Drawing.Size(24, 24);
+            this.pic_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pic_TimKiem.TabIndex = 19;
+            this.pic_TimKiem.TabStop = false;
             // 
-            // textBox7
+            // txt_TimKiem
             // 
-            this.textBox7.Location = new System.Drawing.Point(8, 29);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(175, 20);
-            this.textBox7.TabIndex = 18;
+            this.txt_TimKiem.Location = new System.Drawing.Point(8, 29);
+            this.txt_TimKiem.Name = "txt_TimKiem";
+            this.txt_TimKiem.Size = new System.Drawing.Size(175, 20);
+            this.txt_TimKiem.TabIndex = 18;
             // 
-            // groupBox3
+            // grb_Congcu
             // 
-            this.groupBox3.Controls.Add(this.bnt_TaiLaiNV);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.bnt_ThemNV);
-            this.groupBox3.Location = new System.Drawing.Point(265, 458);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(541, 80);
-            this.groupBox3.TabIndex = 16;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Công cụ";
+            this.grb_Congcu.Controls.Add(this.bnt_TaiLaiNV);
+            this.grb_Congcu.Controls.Add(this.bnt_Sua);
+            this.grb_Congcu.Controls.Add(this.bnt_Xoa);
+            this.grb_Congcu.Controls.Add(this.bnt_ThemNV);
+            this.grb_Congcu.Location = new System.Drawing.Point(265, 486);
+            this.grb_Congcu.Name = "grb_Congcu";
+            this.grb_Congcu.Size = new System.Drawing.Size(541, 80);
+            this.grb_Congcu.TabIndex = 16;
+            this.grb_Congcu.TabStop = false;
+            this.grb_Congcu.Text = "Công cụ";
             // 
             // bnt_TaiLaiNV
             // 
@@ -247,27 +241,27 @@
             this.bnt_TaiLaiNV.Text = "Tải lại";
             this.bnt_TaiLaiNV.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bnt_Sua
             // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(282, 26);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 34);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Sửa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bnt_Sua.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Sua.Image")));
+            this.bnt_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Sua.Location = new System.Drawing.Point(282, 26);
+            this.bnt_Sua.Name = "bnt_Sua";
+            this.bnt_Sua.Size = new System.Drawing.Size(92, 34);
+            this.bnt_Sua.TabIndex = 14;
+            this.bnt_Sua.Text = "Sửa";
+            this.bnt_Sua.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bnt_Xoa
             // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(165, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 34);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Xóa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bnt_Xoa.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Xoa.Image")));
+            this.bnt_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Xoa.Location = new System.Drawing.Point(165, 26);
+            this.bnt_Xoa.Name = "bnt_Xoa";
+            this.bnt_Xoa.Size = new System.Drawing.Size(88, 34);
+            this.bnt_Xoa.TabIndex = 13;
+            this.bnt_Xoa.Text = "Xóa";
+            this.bnt_Xoa.UseVisualStyleBackColor = true;
             // 
             // bnt_ThemNV
             // 
@@ -280,25 +274,77 @@
             this.bnt_ThemNV.Text = "Thêm";
             this.bnt_ThemNV.UseVisualStyleBackColor = true;
             // 
+            // bnt_XacNhan_Them
+            // 
+            this.bnt_XacNhan_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bnt_XacNhan_Them.Location = new System.Drawing.Point(294, 130);
+            this.bnt_XacNhan_Them.Name = "bnt_XacNhan_Them";
+            this.bnt_XacNhan_Them.Size = new System.Drawing.Size(75, 23);
+            this.bnt_XacNhan_Them.TabIndex = 28;
+            this.bnt_XacNhan_Them.UseVisualStyleBackColor = false;
+            // 
+            // bnt_Huy_Them
+            // 
+            this.bnt_Huy_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.bnt_Huy_Them.Location = new System.Drawing.Point(375, 130);
+            this.bnt_Huy_Them.Name = "bnt_Huy_Them";
+            this.bnt_Huy_Them.Size = new System.Drawing.Size(75, 23);
+            this.bnt_Huy_Them.TabIndex = 29;
+            this.bnt_Huy_Them.UseVisualStyleBackColor = false;
+            // 
+            // bnt_XacNhan_Sua
+            // 
+            this.bnt_XacNhan_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bnt_XacNhan_Sua.Location = new System.Drawing.Point(294, 130);
+            this.bnt_XacNhan_Sua.Name = "bnt_XacNhan_Sua";
+            this.bnt_XacNhan_Sua.Size = new System.Drawing.Size(75, 23);
+            this.bnt_XacNhan_Sua.TabIndex = 30;
+            this.bnt_XacNhan_Sua.UseVisualStyleBackColor = false;
+            // 
+            // bnt_Huy_Sua
+            // 
+            this.bnt_Huy_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.bnt_Huy_Sua.Location = new System.Drawing.Point(375, 130);
+            this.bnt_Huy_Sua.Name = "bnt_Huy_Sua";
+            this.bnt_Huy_Sua.Size = new System.Drawing.Size(75, 23);
+            this.bnt_Huy_Sua.TabIndex = 31;
+            this.bnt_Huy_Sua.UseVisualStyleBackColor = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(613, 76);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(363, 76);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 33;
+            // 
             // Control_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.grb_Congcu);
+            this.Controls.Add(this.grb_TimKiem);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.GRV_NhanVien);
+            this.Controls.Add(this.datagv_NhanVien);
             this.Name = "Control_NhanVien";
             this.Size = new System.Drawing.Size(809, 583);
-            ((System.ComponentModel.ISupportInitialize)(this.GRV_NhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagv_NhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
+            this.grb_TimKiem.ResumeLayout(false);
+            this.grb_TimKiem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_TimKiem)).EndInit();
+            this.grb_Congcu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,7 +352,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView GRV_NhanVien;
+        private System.Windows.Forms.DataGridView datagv_NhanVien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
@@ -319,15 +365,19 @@
         private System.Windows.Forms.TextBox txt_TenDangNhapNV;
         private System.Windows.Forms.TextBox txt_MatKhauNV;
         private System.Windows.Forms.TextBox txt_LuongNhanVien;
-        private System.Windows.Forms.TextBox txt_PhanQuyenNV;
-        private System.Windows.Forms.TextBox txt_ChucvuNV;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox grb_TimKiem;
+        private System.Windows.Forms.PictureBox pic_TimKiem;
+        private System.Windows.Forms.TextBox txt_TimKiem;
+        private System.Windows.Forms.GroupBox grb_Congcu;
         private System.Windows.Forms.Button bnt_TaiLaiNV;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bnt_Sua;
+        private System.Windows.Forms.Button bnt_Xoa;
         private System.Windows.Forms.Button bnt_ThemNV;
+        private System.Windows.Forms.Button bnt_Huy_Them;
+        private System.Windows.Forms.Button bnt_XacNhan_Them;
+        private System.Windows.Forms.Button bnt_Huy_Sua;
+        private System.Windows.Forms.Button bnt_XacNhan_Sua;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

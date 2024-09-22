@@ -21,10 +21,27 @@ namespace BLL
         {
             return _DAL_NhanVien.LayDanhSachNhanVien();
         }
-
+        public List<string> DanhsachQuyen()
+        {
+            return _DAL_NhanVien.PhanQuyen();
+        }
+        public List<string> Danhsachchucvu()
+        {
+            return _DAL_NhanVien.ChucVu();
+        }
         public void them(nhanvien _nhanvien)
         {
             _DAL_NhanVien.Them(_nhanvien);
+        }
+        public void xoa(int id) {
+            _DAL_NhanVien.Xoa(id);
+        }
+        public void sua(nhanvien _nhanvien) {
+            _DAL_NhanVien.Sua(_nhanvien);
+        }
+        public IList<nhanvien> DanhSachTimKiem(string ten)
+        {
+            return _DAL_NhanVien.TimKiem(ten);
         }
     }
 }
