@@ -20,21 +20,24 @@ namespace GUI
         {
             InitializeComponent();
             _BLL_NhanVien = new BLL_NhanVien();
-           
-            datagv_NhanVien.CellClick += GRV_NhanVien_CellClick;
+            Setup();
+
+
             bnt_ThemNV.Click += Bnt_ThemNV_Click;
-            bnt_Xoa.Click += Bnt_Xoa_Click;
-            bnt_Sua.Click += Bnt_Sua_Click;
-            bnt_TaiLaiNV.Click += Bnt_TaiLaiNV_Click;
             bnt_XacNhan_Them.Click += Bnt_XacNhan_Them_Click;
             bnt_Huy_Them.Click += Bnt_Huy_Them_Click;
+
+            bnt_Xoa.Click += Bnt_Xoa_Click;
+
+            bnt_Sua.Click += Bnt_Sua_Click;
             bnt_XacNhan_Sua.Click += Bnt_XacNhan_Sua_Click;
             bnt_Huy_Sua.Click += Bnt_Huy_Sua_Click;
+
             pic_TimKiem.Click += Pic_TimKiem_Click;
-            Setup();
-            
 
+            bnt_TaiLaiNV.Click += Bnt_TaiLaiNV_Click;
 
+            datagv_NhanVien.CellClick += GRV_NhanVien_CellClick;                                  
         }
 
         private void Pic_TimKiem_Click(object sender, EventArgs e)

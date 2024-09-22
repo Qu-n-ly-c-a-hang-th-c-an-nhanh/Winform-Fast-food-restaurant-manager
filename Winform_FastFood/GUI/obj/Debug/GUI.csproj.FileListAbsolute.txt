@@ -31,3 +31,5 @@ D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\bin\Debug\DAL.pdb
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Control_TaiKhoan.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Control_DanhMuc.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Control_NhanVien.resources
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Control_KhachHang.resources
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.csprojAssemblyReference.cache

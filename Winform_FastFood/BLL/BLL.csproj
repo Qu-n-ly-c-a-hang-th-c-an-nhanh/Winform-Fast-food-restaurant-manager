@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL_DangNhap.cs" />
+    <Compile Include="BLL_KhachHang.cs" />
     <Compile Include="BLL_NhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -83,7 +83,7 @@
             this.bnt_Menu_NhanVien.ForeColor = System.Drawing.Color.Black;
             this.bnt_Menu_NhanVien.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Menu_NhanVien.Image")));
             this.bnt_Menu_NhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bnt_Menu_NhanVien.Location = new System.Drawing.Point(0, 514);
+            this.bnt_Menu_NhanVien.Location = new System.Drawing.Point(0, 465);
             this.bnt_Menu_NhanVien.Name = "bnt_Menu_NhanVien";
             this.bnt_Menu_NhanVien.Size = new System.Drawing.Size(160, 43);
             this.bnt_Menu_NhanVien.TabIndex = 9;
@@ -101,7 +101,7 @@
             this.bnt_Menu_TaiKhoan.ForeColor = System.Drawing.Color.Black;
             this.bnt_Menu_TaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Menu_TaiKhoan.Image")));
             this.bnt_Menu_TaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bnt_Menu_TaiKhoan.Location = new System.Drawing.Point(0, 465);
+            this.bnt_Menu_TaiKhoan.Location = new System.Drawing.Point(0, 514);
             this.bnt_Menu_TaiKhoan.Name = "bnt_Menu_TaiKhoan";
             this.bnt_Menu_TaiKhoan.Size = new System.Drawing.Size(160, 43);
             this.bnt_Menu_TaiKhoan.TabIndex = 8;

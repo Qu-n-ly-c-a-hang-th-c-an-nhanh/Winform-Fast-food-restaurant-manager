@@ -60,6 +60,12 @@
     <Compile Include="Control_DanhMuc.Designer.cs">
       <DependentUpon>Control_DanhMuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control_KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_KhachHang.Designer.cs">
+      <DependentUpon>Control_KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control_NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <EmbeddedResource Include="Control_DanhMuc.resx">
       <DependentUpon>Control_DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_KhachHang.resx">
+      <DependentUpon>Control_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control_NhanVien.resx">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
