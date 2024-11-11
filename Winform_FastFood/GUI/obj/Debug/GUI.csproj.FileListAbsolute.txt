@@ -33,3 +33,5 @@ D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Contr
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Control_NhanVien.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Control_KhachHang.resources
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.Contro_MonAnl.resources
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\GUI\obj\Debug\GUI.MonAnControl.resources

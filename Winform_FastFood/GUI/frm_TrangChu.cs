@@ -16,27 +16,87 @@ namespace GUI
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+           
+            
+            settable();
 
             bnt_Menu_NhanVien.Click += Bnt_Menu_NhanVien_Click;
             bnt_Menu_KhachHang.Click += Bnt_Menu_KhachHang_Click;
+            bnt_Menu_ThucDon.Click += Bnt_Menu_ThucDon_Click;
+            bnt_Menu_HoaDon.Click += Bnt_Menu_HoaDon_Click;
+            bnt_Menu_ThucDon.Click += Bnt_Menu_ThucDon_Click1;
           
+        }
+
+        private void Bnt_Menu_ThucDon_Click1(object sender, EventArgs e)
+        {
+            var control_danhmuc = new Control_DanhMuc();
+            Panel_Body.Controls.Clear();
+            control_danhmuc.Dock = DockStyle.Fill;
+            Panel_Body.Controls.Add(control_danhmuc);
+
+            //************
+            setcolor();
+            bnt_Menu_ThucDon.BackColor = Color.White;
+        }
+
+        private void Bnt_Menu_HoaDon_Click(object sender, EventArgs e)
+        {
+            var control_hoadon = new Contro_MonAnl();
+            Panel_Body.Controls.Clear();
+            control_hoadon.Dock = DockStyle.Fill;
+            Panel_Body.Controls.Add(control_hoadon);
+
+            //************
+            setcolor();
+            bnt_Menu_HoaDon.BackColor = Color.White;
+        }
+
+        private void settable() {
+            TableLayoutPanel tableLayoutPanel = new TableLayoutPanel();
+            tableLayoutPanel.Dock = DockStyle.Fill;
+            tableLayoutPanel.ColumnCount = 2;
+            tableLayoutPanel.RowCount = 1;
+
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 150)); // 200px cho menu
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100)); // Phần còn lại
+
+           
+            panel1.Dock = DockStyle.Fill;
+            tableLayoutPanel.Controls.Add(panel1, 0, 0); // Thêm vào cột 0
+
+            // Tạo Panel_Body cho nội dung
+            
+            Panel_Body.Dock = DockStyle.Fill;
+            tableLayoutPanel.Controls.Add(Panel_Body, 1, 0); // Thêm vào cột 1
+
+            // Thêm TableLayoutPanel vào Form
+            this.Controls.Add(tableLayoutPanel);
+        }
+        private void Bnt_Menu_ThucDon_Click(object sender, EventArgs e)
+        {
+     
+           
         }
 
         private void Bnt_Menu_KhachHang_Click(object sender, EventArgs e)
         {
             var control_khachhang = new Control_KhachHang();
             Panel_Body.Controls.Clear();
+            control_khachhang.Dock = DockStyle.Fill;
             Panel_Body.Controls.Add(control_khachhang);
+            //************
             setcolor();
             bnt_Menu_KhachHang.BackColor = Color.White;
             
         }
-
         private void Bnt_Menu_NhanVien_Click(object sender, EventArgs e)
         {
             var control_nhanvien = new Control_NhanVien();
             Panel_Body.Controls.Clear();
+            control_nhanvien.Dock = DockStyle.Fill;
             Panel_Body.Controls.Add(control_nhanvien);
+            //************
             setcolor();
             bnt_Menu_NhanVien.BackColor = Color.White;
         }

@@ -72,6 +72,12 @@
     <Compile Include="Control_NhanVien.Designer.cs">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contro_MonAnl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Contro_MonAnl.Designer.cs">
+      <DependentUpon>Contro_MonAnl.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     </Compile>
     <Compile Include="frm_TrangChu.Designer.cs">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonAnControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonAnControl.Designer.cs">
+      <DependentUpon>MonAnControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,11 +113,17 @@
     <EmbeddedResource Include="Control_NhanVien.resx">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Contro_MonAnl.resx">
+      <DependentUpon>Contro_MonAnl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TrangChu.resx">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonAnControl.resx">
+      <DependentUpon>MonAnControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

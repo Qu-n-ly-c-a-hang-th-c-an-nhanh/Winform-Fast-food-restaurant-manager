@@ -32,6 +32,12 @@
             this.datagv_NhanVien = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bnt_Huy_Sua = new System.Windows.Forms.Button();
+            this.bnt_XacNhan_Sua = new System.Windows.Forms.Button();
+            this.bnt_Huy_Them = new System.Windows.Forms.Button();
+            this.bnt_XacNhan_Them = new System.Windows.Forms.Button();
             this.txt_TenDangNhapNV = new System.Windows.Forms.TextBox();
             this.txt_MatKhauNV = new System.Windows.Forms.TextBox();
             this.txt_LuongNhanVien = new System.Windows.Forms.TextBox();
@@ -50,12 +56,6 @@
             this.bnt_Sua = new System.Windows.Forms.Button();
             this.bnt_Xoa = new System.Windows.Forms.Button();
             this.bnt_ThemNV = new System.Windows.Forms.Button();
-            this.bnt_XacNhan_Them = new System.Windows.Forms.Button();
-            this.bnt_Huy_Them = new System.Windows.Forms.Button();
-            this.bnt_XacNhan_Sua = new System.Windows.Forms.Button();
-            this.bnt_Huy_Sua = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagv_NhanVien)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grb_TimKiem.SuspendLayout();
@@ -106,6 +106,58 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(363, 76);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 33;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(613, 76);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // bnt_Huy_Sua
+            // 
+            this.bnt_Huy_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.bnt_Huy_Sua.Location = new System.Drawing.Point(375, 130);
+            this.bnt_Huy_Sua.Name = "bnt_Huy_Sua";
+            this.bnt_Huy_Sua.Size = new System.Drawing.Size(75, 23);
+            this.bnt_Huy_Sua.TabIndex = 31;
+            this.bnt_Huy_Sua.UseVisualStyleBackColor = false;
+            // 
+            // bnt_XacNhan_Sua
+            // 
+            this.bnt_XacNhan_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bnt_XacNhan_Sua.Location = new System.Drawing.Point(294, 130);
+            this.bnt_XacNhan_Sua.Name = "bnt_XacNhan_Sua";
+            this.bnt_XacNhan_Sua.Size = new System.Drawing.Size(75, 23);
+            this.bnt_XacNhan_Sua.TabIndex = 30;
+            this.bnt_XacNhan_Sua.UseVisualStyleBackColor = false;
+            // 
+            // bnt_Huy_Them
+            // 
+            this.bnt_Huy_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.bnt_Huy_Them.Location = new System.Drawing.Point(375, 130);
+            this.bnt_Huy_Them.Name = "bnt_Huy_Them";
+            this.bnt_Huy_Them.Size = new System.Drawing.Size(75, 23);
+            this.bnt_Huy_Them.TabIndex = 29;
+            this.bnt_Huy_Them.UseVisualStyleBackColor = false;
+            // 
+            // bnt_XacNhan_Them
+            // 
+            this.bnt_XacNhan_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.bnt_XacNhan_Them.Location = new System.Drawing.Point(294, 130);
+            this.bnt_XacNhan_Them.Name = "bnt_XacNhan_Them";
+            this.bnt_XacNhan_Them.Size = new System.Drawing.Size(75, 23);
+            this.bnt_XacNhan_Them.TabIndex = 28;
+            this.bnt_XacNhan_Them.UseVisualStyleBackColor = false;
             // 
             // txt_TenDangNhapNV
             // 
@@ -274,62 +326,11 @@
             this.bnt_ThemNV.Text = "Thêm";
             this.bnt_ThemNV.UseVisualStyleBackColor = true;
             // 
-            // bnt_XacNhan_Them
-            // 
-            this.bnt_XacNhan_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bnt_XacNhan_Them.Location = new System.Drawing.Point(294, 130);
-            this.bnt_XacNhan_Them.Name = "bnt_XacNhan_Them";
-            this.bnt_XacNhan_Them.Size = new System.Drawing.Size(75, 23);
-            this.bnt_XacNhan_Them.TabIndex = 28;
-            this.bnt_XacNhan_Them.UseVisualStyleBackColor = false;
-            // 
-            // bnt_Huy_Them
-            // 
-            this.bnt_Huy_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.bnt_Huy_Them.Location = new System.Drawing.Point(375, 130);
-            this.bnt_Huy_Them.Name = "bnt_Huy_Them";
-            this.bnt_Huy_Them.Size = new System.Drawing.Size(75, 23);
-            this.bnt_Huy_Them.TabIndex = 29;
-            this.bnt_Huy_Them.UseVisualStyleBackColor = false;
-            // 
-            // bnt_XacNhan_Sua
-            // 
-            this.bnt_XacNhan_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.bnt_XacNhan_Sua.Location = new System.Drawing.Point(294, 130);
-            this.bnt_XacNhan_Sua.Name = "bnt_XacNhan_Sua";
-            this.bnt_XacNhan_Sua.Size = new System.Drawing.Size(75, 23);
-            this.bnt_XacNhan_Sua.TabIndex = 30;
-            this.bnt_XacNhan_Sua.UseVisualStyleBackColor = false;
-            // 
-            // bnt_Huy_Sua
-            // 
-            this.bnt_Huy_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.bnt_Huy_Sua.Location = new System.Drawing.Point(375, 130);
-            this.bnt_Huy_Sua.Name = "bnt_Huy_Sua";
-            this.bnt_Huy_Sua.Size = new System.Drawing.Size(75, 23);
-            this.bnt_Huy_Sua.TabIndex = 31;
-            this.bnt_Huy_Sua.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(613, 76);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 32;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(363, 76);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 33;
-            // 
             // Control_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.grb_Congcu);
             this.Controls.Add(this.grb_TimKiem);
@@ -337,7 +338,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.datagv_NhanVien);
             this.Name = "Control_NhanVien";
-            this.Size = new System.Drawing.Size(809, 583);
+            this.Size = new System.Drawing.Size(809, 569);
+            this.Load += new System.EventHandler(this.Control_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagv_NhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

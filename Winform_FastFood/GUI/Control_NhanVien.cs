@@ -20,6 +20,8 @@ namespace GUI
         {
             InitializeComponent();
             _BLL_NhanVien = new BLL_NhanVien();
+            this.Dock = DockStyle.Fill;
+            this.AutoSize = false;
             Setup();
 
 
@@ -279,6 +281,11 @@ namespace GUI
             bnt_XacNhan_Sua.Hide();
             bnt_Huy_Sua.Hide();
         
+        }
+
+        private void Control_NhanVien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
