@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.875" name="FastFood">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 14.875" name="FastFood">
   <DataContextMoniker Name="/FastFoodDataContext" />
   <nestedChildShapes>
-    <classShape Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" absoluteBounds="6.25, 3.75, 2, 1.7708968098958327">
+    <classShape Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" absoluteBounds="9, 4.625, 2, 1.7708968098958327">
       <DataClassMoniker Name="/FastFoodDataContext/ChiTietDonDatHang" />
       <nestedChildShapes>
-        <elementListCompartment Id="9da3cb17-939c-4e93-ba7a-32573bd3086b" absoluteBounds="6.265, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="9da3cb17-939c-4e93-ba7a-32573bd3086b" absoluteBounds="9.015, 5.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="3010c1f8-b6d6-4d01-beff-ea5d93793a99" absoluteBounds="6.25, 7, 2, 1.7708968098958335">
+    <classShape Id="3010c1f8-b6d6-4d01-beff-ea5d93793a99" absoluteBounds="8.5, 6.875, 2, 1.7708968098958335">
       <DataClassMoniker Name="/FastFoodDataContext/ThanhToan" />
       <nestedChildShapes>
-        <elementListCompartment Id="85f5603e-5513-4761-9d5f-4209b23d7c9f" absoluteBounds="6.265, 7.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="85f5603e-5513-4761-9d5f-4209b23d7c9f" absoluteBounds="8.515, 7.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="08dbcb84-e597-463d-bdf8-0e70ab4b86ca" absoluteBounds="0.75, 3, 2, 1.3862939453125005">
@@ -62,56 +62,56 @@
         <elementListCompartment Id="b5f52870-50a7-42cd-816b-db394bb5222e" absoluteBounds="0.765, 9.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.5 : 5.75); (5.875 : 5.375); (5.875 : 5.89589680989583); (6.00357443490112 : 5.76732237499471 : JumpStart); (6.12142556509888 : 5.64947124479695 : JumpEnd); (6.25 : 5.52089680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 6.07294840494792); (5.97916666666667 : 6.07294840494792 : JumpStart); (6.14583333333333 : 6.07294840494792 : JumpEnd); (9 : 6.07294840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/DonDatHang/DonDatHang_ChiTietDonDatHang" />
       <nodes>
         <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
         <classShapeMoniker Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 7.26044840494792); (5.97916666666667 : 7.26044840494792 : JumpStart); (6.14583333333333 : 7.26044840494792 : JumpEnd); (6.25 : 7.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 7.19794840494792); (5.97916666666667 : 7.19794840494792 : JumpStart); (6.14583333333333 : 7.19794840494792 : JumpEnd); (8.5 : 7.19794840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/DonDatHang/DonDatHang_ThanhToan" />
       <nodes>
         <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
         <classShapeMoniker Id="3010c1f8-b6d6-4d01-beff-ea5d93793a99" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(4.5 : 7.52089680989583); (4.5 : 10.3854484049479); (5.97916666666667 : 10.3854484049479 : JumpStart); (6.14583333333333 : 10.3854484049479 : JumpEnd); (6.25 : 10.3854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.5 : 7.52089680989583); (4.5 : 10.3854484049479); (5.97916666666667 : 10.3854484049479 : JumpStart); (6.14583333333333 : 10.3854484049479 : JumpEnd); (6.25 : 10.3854484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/DonDatHang/DonDatHang_DoanhThu" />
       <nodes>
         <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
         <classShapeMoniker Id="eb9da5d0-8e7e-407a-9635-6ac92db5cbe7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 6.63544840494792); (3.5 : 6.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 6.63544840494792); (3.5 : 6.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/KhachHang/KhachHang_DonDatHang" />
       <nodes>
         <classShapeMoniker Id="3062d3fb-158f-48a3-ab3c-b25cc1805ce0" />
         <classShapeMoniker Id="faf29482-a3b9-4a9a-a726-99f0f4464a17" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 4.16909912109375); (5.97916666666667 : 4.16909912109375 : JumpStart); (6.14583333333333 : 4.16909912109375 : JumpEnd); (6.25 : 4.16909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 3.60659912109375); (5.97916666666667 : 3.60659912109375 : JumpStart); (6.14583333333333 : 3.60659912109375 : JumpEnd); (10 : 3.60659912109375); (10 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/MonAn/MonAn_ChiTietDonDatHang" />
       <nodes>
         <classShapeMoniker Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" />
         <classShapeMoniker Id="93b49fb0-aca7-42f6-a565-8b5ff08edd8d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(4.5 : 2.625); (4.5 : 1.63544840494792); (6.25 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.5 : 2.625); (4.5 : 1.63544840494792); (6.25 : 1.63544840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/MonAn/MonAn_Kho" />
       <nodes>
         <classShapeMoniker Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" />
         <classShapeMoniker Id="253dd031-ef1e-4886-b828-a093c3b2d33f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 3.69314697265625); (3.5 : 3.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 3.69314697265625); (3.5 : 3.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/DanhMucMonAn/DanhMucMonAn_MonAn" />
       <nodes>
         <classShapeMoniker Id="08dbcb84-e597-463d-bdf8-0e70ab4b86ca" />
         <classShapeMoniker Id="fd9f4cc8-5140-4ded-92ca-0ac1f388695f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 12.6869152522536); (6.0625 : 12.1244152522536); (6.0625 : 2.10942460742187); (6.25 : 2.10942460742187)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 12.6869152522536); (6.0625 : 12.1244152522536); (6.0625 : 1.63544840494792); (6.25 : 1.63544840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/NhaCungCap/NhaCungCap_Kho" />
       <nodes>
         <classShapeMoniker Id="2e19e028-7712-4620-a0e2-70607bcac1c1" />

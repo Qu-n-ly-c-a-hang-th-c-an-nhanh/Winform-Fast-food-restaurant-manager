@@ -30,10 +30,10 @@ namespace GUI
 
         private void Bnt_Menu_ThucDon_Click1(object sender, EventArgs e)
         {
-            var control_danhmuc = new Control_DanhMuc();
+            var control_thucdon = new Control_ThucDon();
             Panel_Body.Controls.Clear();
-            control_danhmuc.Dock = DockStyle.Fill;
-            Panel_Body.Controls.Add(control_danhmuc);
+            control_thucdon.Dock = DockStyle.Fill;
+            Panel_Body.Controls.Add(control_thucdon);
 
             //************
             setcolor();
@@ -109,6 +109,22 @@ namespace GUI
             bnt_Menu_TaiKhoan.BackColor = Color.FromArgb(255, 250, 200);
             bnt_Menu_DoanhThu.BackColor = Color.FromArgb(255, 250, 200);
             bnt_Menu_NhanVien.BackColor = Color.FromArgb(255, 250, 200);
+        }
+
+        private void bnt_Menu_DanhMuc_Click(object sender, EventArgs e)
+        {
+            var control_Danhmuc = new Control_DanhMuc();
+            Panel_Body.Controls.Clear();
+            control_Danhmuc.Dock = DockStyle.Fill;
+            Panel_Body.Controls.Add(control_Danhmuc);
+            //************
+            setcolor();
+            bnt_Menu_NhanVien.BackColor = Color.White;
+        }
+
+        private void bnt_Menu_ThucDon_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

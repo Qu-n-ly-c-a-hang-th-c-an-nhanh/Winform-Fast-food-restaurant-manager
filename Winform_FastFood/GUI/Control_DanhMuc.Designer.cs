@@ -35,9 +35,16 @@
             this.bnt_Xoa = new System.Windows.Forms.Button();
             this.bnt_ThemNV = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.datagv_danhmuc = new System.Windows.Forms.DataGridView();
             this.grb_Congcu.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagv_danhmuc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,10 +54,10 @@
             this.grb_Congcu.Controls.Add(this.bnt_Sua);
             this.grb_Congcu.Controls.Add(this.bnt_Xoa);
             this.grb_Congcu.Controls.Add(this.bnt_ThemNV);
-            this.grb_Congcu.Location = new System.Drawing.Point(3, 42);
+            this.grb_Congcu.Location = new System.Drawing.Point(3, 37);
             this.grb_Congcu.Name = "grb_Congcu";
             this.grb_Congcu.Size = new System.Drawing.Size(506, 70);
-            this.grb_Congcu.TabIndex = 21;
+            this.grb_Congcu.TabIndex = 25;
             this.grb_Congcu.TabStop = false;
             this.grb_Congcu.Text = "Công cụ";
             // 
@@ -64,6 +71,7 @@
             this.bnt_TaiLaiNV.TabIndex = 15;
             this.bnt_TaiLaiNV.Text = "Tải lại";
             this.bnt_TaiLaiNV.UseVisualStyleBackColor = true;
+            this.bnt_TaiLaiNV.Click += new System.EventHandler(this.bnt_TaiLaiNV_Click);
             // 
             // bnt_Sua
             // 
@@ -75,6 +83,7 @@
             this.bnt_Sua.TabIndex = 14;
             this.bnt_Sua.Text = "Sửa";
             this.bnt_Sua.UseVisualStyleBackColor = true;
+            this.bnt_Sua.Click += new System.EventHandler(this.bnt_Sua_Click);
             // 
             // bnt_Xoa
             // 
@@ -86,6 +95,7 @@
             this.bnt_Xoa.TabIndex = 13;
             this.bnt_Xoa.Text = "Xóa";
             this.bnt_Xoa.UseVisualStyleBackColor = true;
+            this.bnt_Xoa.Click += new System.EventHandler(this.bnt_Xoa_Click);
             // 
             // bnt_ThemNV
             // 
@@ -97,34 +107,85 @@
             this.bnt_ThemNV.TabIndex = 12;
             this.bnt_ThemNV.Text = "Thêm";
             this.bnt_ThemNV.UseVisualStyleBackColor = true;
+            this.bnt_ThemNV.Click += new System.EventHandler(this.bnt_ThemNV_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(515, 53);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(515, 37);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(355, 530);
-            this.groupBox1.TabIndex = 19;
+            this.groupBox1.Size = new System.Drawing.Size(355, 541);
+            this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin nhân viên";
+            this.groupBox1.Text = "Thông tin danh mục";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(144, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Chọn ảnh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(131, 105);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(73, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Ảnh";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(105, 60);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(166, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên danh mục";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(270, 14);
+            this.label1.Location = new System.Drawing.Point(205, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 25);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Quản lý thông tin nhân viên";
+            this.label1.Size = new System.Drawing.Size(286, 25);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Quản lý danh mục món ăn";
             // 
             // datagv_danhmuc
             // 
             this.datagv_danhmuc.BackgroundColor = System.Drawing.Color.White;
             this.datagv_danhmuc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagv_danhmuc.Location = new System.Drawing.Point(3, 118);
+            this.datagv_danhmuc.Location = new System.Drawing.Point(3, 113);
             this.datagv_danhmuc.Name = "datagv_danhmuc";
             this.datagv_danhmuc.Size = new System.Drawing.Size(506, 465);
-            this.datagv_danhmuc.TabIndex = 17;
+            this.datagv_danhmuc.TabIndex = 22;
+            this.datagv_danhmuc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagv_danhmuc_CellClick);
             // 
             // Control_DanhMuc
             // 
@@ -135,8 +196,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.datagv_danhmuc);
             this.Name = "Control_DanhMuc";
-            this.Size = new System.Drawing.Size(873, 586);
+            this.Size = new System.Drawing.Size(888, 586);
             this.grb_Congcu.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagv_danhmuc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,6 +208,7 @@
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox grb_Congcu;
         private System.Windows.Forms.Button bnt_TaiLaiNV;
         private System.Windows.Forms.Button bnt_Sua;
@@ -152,5 +217,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView datagv_danhmuc;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -57,7 +57,7 @@
     <Compile Include="Control_DanhMuc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control_DanhMuc.Designer.cs">
+    <Compile Include="Control_DanhMuc.designer.cs">
       <DependentUpon>Control_DanhMuc.cs</DependentUpon>
     </Compile>
     <Compile Include="Control_KhachHang.cs">
@@ -71,6 +71,12 @@
     </Compile>
     <Compile Include="Control_NhanVien.Designer.cs">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_ThucDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control_ThucDon.designer.cs">
+      <DependentUpon>Control_ThucDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Contro_MonAnl.cs">
       <SubType>UserControl</SubType>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control_NhanVien.resx">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_ThucDon.resx">
+      <DependentUpon>Control_ThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contro_MonAnl.resx">
       <DependentUpon>Contro_MonAnl.cs</DependentUpon>

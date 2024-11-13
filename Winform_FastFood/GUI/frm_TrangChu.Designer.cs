@@ -100,6 +100,7 @@
             this.bnt_Menu_DanhMuc.TabIndex = 3;
             this.bnt_Menu_DanhMuc.Text = "Danh mục";
             this.bnt_Menu_DanhMuc.UseVisualStyleBackColor = false;
+            this.bnt_Menu_DanhMuc.Click += new System.EventHandler(this.bnt_Menu_DanhMuc_Click);
             // 
             // bnt_Menu_ThucDon
             // 
@@ -118,6 +119,7 @@
             this.bnt_Menu_ThucDon.TabIndex = 4;
             this.bnt_Menu_ThucDon.Text = "Thực đơn";
             this.bnt_Menu_ThucDon.UseVisualStyleBackColor = false;
+            this.bnt_Menu_ThucDon.Click += new System.EventHandler(this.bnt_Menu_ThucDon_Click_1);
             // 
             // bnt_Menu_HoaDon
             // 
