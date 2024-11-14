@@ -30,6 +30,10 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_tennv = new System.Windows.Forms.Label();
+            this.lb_gio = new System.Windows.Forms.Label();
+            this.lb_ngayin = new System.Windows.Forms.Label();
+            this.luu = new System.Windows.Forms.Button();
             this.tongtien = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,7 +47,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.luu = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +69,9 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lb_tennv);
+            this.panel2.Controls.Add(this.lb_gio);
+            this.panel2.Controls.Add(this.lb_ngayin);
             this.panel2.Controls.Add(this.luu);
             this.panel2.Controls.Add(this.tongtien);
             this.panel2.Controls.Add(this.label9);
@@ -82,6 +88,42 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(316, 577);
             this.panel2.TabIndex = 1;
+            // 
+            // lb_tennv
+            // 
+            this.lb_tennv.AutoSize = true;
+            this.lb_tennv.Location = new System.Drawing.Point(93, 120);
+            this.lb_tennv.Name = "lb_tennv";
+            this.lb_tennv.Size = new System.Drawing.Size(41, 13);
+            this.lb_tennv.TabIndex = 14;
+            this.lb_tennv.Text = "label12";
+            // 
+            // lb_gio
+            // 
+            this.lb_gio.AutoSize = true;
+            this.lb_gio.Location = new System.Drawing.Point(93, 96);
+            this.lb_gio.Name = "lb_gio";
+            this.lb_gio.Size = new System.Drawing.Size(41, 13);
+            this.lb_gio.TabIndex = 13;
+            this.lb_gio.Text = "label11";
+            // 
+            // lb_ngayin
+            // 
+            this.lb_ngayin.AutoSize = true;
+            this.lb_ngayin.Location = new System.Drawing.Point(93, 71);
+            this.lb_ngayin.Name = "lb_ngayin";
+            this.lb_ngayin.Size = new System.Drawing.Size(41, 13);
+            this.lb_ngayin.TabIndex = 12;
+            this.lb_ngayin.Text = "label10";
+            // 
+            // luu
+            // 
+            this.luu.Location = new System.Drawing.Point(96, 541);
+            this.luu.Name = "luu";
+            this.luu.Size = new System.Drawing.Size(115, 23);
+            this.luu.TabIndex = 11;
+            this.luu.Text = "Lưu và xuất hóa đơn";
+            this.luu.UseVisualStyleBackColor = true;
             // 
             // tongtien
             // 
@@ -160,9 +202,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(16, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Mã hóa đơn:";
+            this.label2.Text = "Thời gian:";
             // 
             // label1
             // 
@@ -180,15 +222,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 311);
             this.panel1.TabIndex = 0;
-            // 
-            // luu
-            // 
-            this.luu.Location = new System.Drawing.Point(96, 541);
-            this.luu.Name = "luu";
-            this.luu.Size = new System.Drawing.Size(115, 23);
-            this.luu.TabIndex = 11;
-            this.luu.Text = "Lưu và xuất hóa đơn";
-            this.luu.UseVisualStyleBackColor = true;
             // 
             // Contro_MonAnl
             // 
@@ -223,5 +256,8 @@
         private System.Windows.Forms.Button luu;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Label lb_tennv;
+        private System.Windows.Forms.Label lb_gio;
+        private System.Windows.Forms.Label lb_ngayin;
     }
 }

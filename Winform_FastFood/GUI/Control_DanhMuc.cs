@@ -15,7 +15,7 @@ namespace GUI
 {
     public partial class Control_DanhMuc : UserControl
     {
-        private readonly FastFoodDataContext db;
+       // private readonly FastFoodDataContext db;
         public Control_DanhMuc()
         {
             InitializeComponent();

@@ -7,19 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace GUI
 {
     public partial class frm_TrangChu : Form
     {
-        public frm_TrangChu()
+        private nhanvien _nhanVien;
+        public frm_TrangChu(nhanvien nhanVien)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            _nhanVien = nhanVien;
            
-            
-            settable();
 
+            settable();
+            lb_tennv.Text = _nhanVien.TenNhanVien;
             bnt_Menu_NhanVien.Click += Bnt_Menu_NhanVien_Click;
             bnt_Menu_KhachHang.Click += Bnt_Menu_KhachHang_Click;
             bnt_Menu_ThucDon.Click += Bnt_Menu_ThucDon_Click;
@@ -42,7 +45,7 @@ namespace GUI
 
         private void Bnt_Menu_HoaDon_Click(object sender, EventArgs e)
         {
-            var control_hoadon = new Contro_MonAnl();
+            var control_hoadon = new Contro_MonAnl(_nhanVien); 
             Panel_Body.Controls.Clear();
             control_hoadon.Dock = DockStyle.Fill;
             Panel_Body.Controls.Add(control_hoadon);

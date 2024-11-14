@@ -16,14 +16,31 @@ namespace GUI
     public partial class Contro_MonAnl : UserControl
     {
         private readonly FastFoodDataContext db;
-        public Contro_MonAnl()
+        private decimal totalAmount = 0;
+
+        public Contro_MonAnl(nhanvien nhanVien)
         {
             db = new FastFoodDataContext();
             InitializeComponent();
             panel1.AutoScroll = true;
             loadmenu();
+            lb_ngayin.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lb_gio.Text = DateTime.Now.ToString("HH:mm:ss");
+            SetTenNV(nhanVien);
+
+            luu.Click += Luu_Click;
         }
 
+        private void Luu_Click(object sender, EventArgs e)
+        {
+           SaveHoaDon();
+         
+        }
+
+        public void SetTenNV(nhanvien nhanVien)
+        {
+            lb_tennv.Text = nhanVien.TenNhanVien;
+        }
         private void loadmenu()
         {
             FastFoodDataContext db = new FastFoodDataContext();
@@ -32,9 +49,7 @@ namespace GUI
             Panel panneldanhmuc = new Panel();
             panneldanhmuc.AutoScroll = true;
             panneldanhmuc.Dock = DockStyle.Fill;
-
             tableLayoutPanel1.Controls.Add(panneldanhmuc, 0, 0);
-
             int buttonHeight = 80;
             int buttonWidth = 100;
             int spacing = 0;
@@ -264,7 +279,7 @@ namespace GUI
 
             int controlHeight = 100;
             int controlWidth = 120;
-            int spacing = 10;
+            //int spacing = 10;
 
             // Thêm tất cả món ăn vào flowPanel
             foreach (var monAn in monAnList)
@@ -392,7 +407,7 @@ namespace GUI
         }
         private void UpdateOverallTotal()
         {
-            decimal totalAmount = 0; // Đặt lại tổng tiền
+             totalAmount = 0; // Đặt lại tổng tiền
 
             foreach (Control control in panel1.Controls)
             {
@@ -419,5 +434,92 @@ namespace GUI
         {
 
         }
+        private void SaveHoaDon()
+        {
+            // Lấy thông tin từ giao diện người dùng
+            string tenNhanVien = lb_tennv.Text;  // Tên nhân viên
+            string ngayHoaDon = lb_ngayin.Text;    // Ngày hóa đơn
+            string gioHoaDon = lb_gio.Text;      // Giờ hóa đơn
+            decimal tongTien = totalAmount;      // Tổng tiền lấy từ biến totalAmount
+
+            // Lấy Mã Nhân Viên từ tên nhân viên (giả sử đã có danh sách nhân viên trong cơ sở dữ liệu)
+            var nhanVien = db.nhanviens.SingleOrDefault(nv => nv.TenNhanVien == tenNhanVien);
+
+            if (nhanVien == null)
+            {
+                MessageBox.Show("Nhân viên không tồn tại.");
+                return; // Nếu không tìm thấy nhân viên, thoát khỏi hàm
+            }
+
+            // Tạo đối tượng Hóa Đơn
+            var hoaDon = new HoaDon
+            {
+                MaNhanVien = nhanVien.MaNhanVien,  // Mã nhân viên lấy từ cơ sở dữ liệu
+                NgayHoaDon = DateTime.Parse(ngayHoaDon),  // Ngày hóa đơn (có thể chuyển từ string sang DateTime nếu cần)
+                TongTien = tongTien,   // Tổng tiền hóa đơn
+                TenNhanVien = tenNhanVien,  // Tên nhân viên
+                ThoiGian = DateTime.Parse(gioHoaDon)  // Giờ hóa đơn
+            };
+
+            // Thêm hóa đơn vào cơ sở dữ liệu
+            db.HoaDons.InsertOnSubmit(hoaDon);
+            db.SubmitChanges(); // Lưu thay đổi vào database
+
+            // Lấy mã hóa đơn đã lưu
+            int maHoaDon = hoaDon.MaHoaDon;
+
+            // Lưu chi tiết hóa đơn
+            SaveChiTietHoaDon(maHoaDon);
+
+            // Thông báo thành công
+            MessageBox.Show("Hóa đơn đã được lưu thành công.");
+        }
+
+        private void SaveChiTietHoaDon(int maHoaDon)
+        {
+            // Lặp qua các món ăn trong panel1 (hoặc nơi bạn lưu các món ăn đã chọn)
+            foreach (Control control in panel1.Controls)
+            {
+                if (control is TableLayoutPanel tableLayoutPanel)
+                {
+                    var quantityTextBox = (TextBox)tableLayoutPanel.Controls[1]; // Số lượng
+                    var priceLabel = (Label)tableLayoutPanel.Controls[2]; // Giá
+                    var nameLabel = (Label)tableLayoutPanel.Controls[0]; // Tên món ăn
+
+                    if (decimal.TryParse(priceLabel.Text.Replace(" VNĐ", ""), out decimal price) &&
+                        int.TryParse(quantityTextBox.Text, out int quantity))
+                    {
+                        // Tính tổng tiền cho món ăn
+                        decimal thanhTien = quantity * price;
+
+                        // Lấy mã món ăn từ tên món ăn (giả sử bạn đã có cơ sở dữ liệu các món ăn)
+                        var monAn = db.MonAns.SingleOrDefault(m => m.TenMonAn == nameLabel.Text);
+
+                        if (monAn != null)
+                        {
+                            // Tạo đối tượng chi tiết hóa đơn
+                            var chiTietHoaDon = new ChiTietHoaDon
+                            {
+                                MaHoaDon = maHoaDon,       // Mã hóa đơn
+                                MaMonAn = monAn.MaMonAn,   // Mã món ăn
+                                SoLuong = quantity,        // Số lượng món ăn
+                                Gia = price,               // Giá mỗi món ăn
+                                ThanhTien = thanhTien      // Tổng tiền món ăn
+                            };
+
+                            // Thêm chi tiết hóa đơn vào cơ sở dữ liệu
+                            db.ChiTietHoaDons.InsertOnSubmit(chiTietHoaDon);
+                        }
+                    }
+                }
+            }
+
+            // Lưu các thay đổi vào cơ sở dữ liệu
+            db.SubmitChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+        }
+
+
+
+
     }
 }

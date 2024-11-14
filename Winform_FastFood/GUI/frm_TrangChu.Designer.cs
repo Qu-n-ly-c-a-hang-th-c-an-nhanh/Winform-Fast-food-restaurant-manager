@@ -41,6 +41,8 @@
             this.bnt_Menu_NhanVien = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Panel_Body = new System.Windows.Forms.Panel();
+            this.lb_tennv = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -214,6 +216,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lb_tennv);
             this.panel1.Controls.Add(this.bnt_Menu_NhanVien);
             this.panel1.Controls.Add(this.bnt_Menu_TaiKhoan);
             this.panel1.Controls.Add(this.bnt_Menu_DoanhThu);
@@ -236,6 +240,24 @@
             this.Panel_Body.Name = "Panel_Body";
             this.Panel_Body.Size = new System.Drawing.Size(200, 100);
             this.Panel_Body.TabIndex = 3;
+            // 
+            // lb_tennv
+            // 
+            this.lb_tennv.AutoSize = true;
+            this.lb_tennv.Location = new System.Drawing.Point(61, 569);
+            this.lb_tennv.Name = "lb_tennv";
+            this.lb_tennv.Size = new System.Drawing.Size(35, 13);
+            this.lb_tennv.TabIndex = 10;
+            this.lb_tennv.Text = "label2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 569);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Xin chào ";
             // 
             // frm_TrangChu
             // 
@@ -268,5 +290,7 @@
         private System.Windows.Forms.Button bnt_Menu_NhanVien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Panel_Body;
+        private System.Windows.Forms.Label lb_tennv;
+        private System.Windows.Forms.Label label2;
     }
 }
