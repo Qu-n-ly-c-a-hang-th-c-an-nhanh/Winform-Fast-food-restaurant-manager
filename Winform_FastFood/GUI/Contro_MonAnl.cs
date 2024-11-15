@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DTO;
 using System.Data.Linq;
 using System.IO;
+using iText.Kernel.Pdf;
 
 namespace GUI
 {
@@ -34,7 +35,7 @@ namespace GUI
         private void Luu_Click(object sender, EventArgs e)
         {
            SaveHoaDon();
-         
+            panel1.Controls.Clear();
         }
 
         public void SetTenNV(nhanvien nhanVien)
@@ -455,7 +456,7 @@ namespace GUI
             var hoaDon = new HoaDon
             {
                 MaNhanVien = nhanVien.MaNhanVien,  // Mã nhân viên lấy từ cơ sở dữ liệu
-                NgayHoaDon = DateTime.Parse(ngayHoaDon),  // Ngày hóa đơn (có thể chuyển từ string sang DateTime nếu cần)
+                NgayHoaDon = DateTime.Parse(ngayHoaDon),  // Ngày hóa đơn
                 TongTien = tongTien,   // Tổng tiền hóa đơn
                 TenNhanVien = tenNhanVien,  // Tên nhân viên
                 ThoiGian = DateTime.Parse(gioHoaDon)  // Giờ hóa đơn
@@ -471,10 +472,12 @@ namespace GUI
             // Lưu chi tiết hóa đơn
             SaveChiTietHoaDon(maHoaDon);
 
+            // Lưu doanh thu
+            SaveDoanhThu(maHoaDon, tongTien);
+
             // Thông báo thành công
             MessageBox.Show("Hóa đơn đã được lưu thành công.");
         }
-
         private void SaveChiTietHoaDon(int maHoaDon)
         {
             // Lặp qua các món ăn trong panel1 (hoặc nơi bạn lưu các món ăn đã chọn)
@@ -517,9 +520,19 @@ namespace GUI
             // Lưu các thay đổi vào cơ sở dữ liệu
             db.SubmitChanges(); // Lưu thay đổi vào cơ sở dữ liệu
         }
+        private void SaveDoanhThu(int maHoaDon, decimal tongTien)
+        {
+            // Tạo đối tượng DoanhThu
+            var doanhThu = new DoanhThu
+            {
+                MaHoaDon = maHoaDon,        // Mã hóa đơn đã lưu
+                NgayGhiNhan = DateTime.Now, // Ngày ghi nhận (ngày hiện tại)
+                TongTien = tongTien,        // Tổng tiền từ hóa đơn
+            };
 
-
-
-
+            // Thêm doanh thu vào cơ sở dữ liệu
+            db.DoanhThus.InsertOnSubmit(doanhThu);
+            db.SubmitChanges(); // Lưu thay đổi vào database
+        }
     }
 }

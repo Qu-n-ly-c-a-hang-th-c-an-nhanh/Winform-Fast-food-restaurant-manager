@@ -37,12 +37,12 @@
             this.bnt_Menu_HoaDon = new System.Windows.Forms.Button();
             this.bnt_Menu_KhachHang = new System.Windows.Forms.Button();
             this.bnt_Menu_DoanhThu = new System.Windows.Forms.Button();
-            this.bnt_Menu_TaiKhoan = new System.Windows.Forms.Button();
+            this.bnt_Menu_DangXuat = new System.Windows.Forms.Button();
             this.bnt_Menu_NhanVien = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Panel_Body = new System.Windows.Forms.Panel();
-            this.lb_tennv = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lb_tennv = new System.Windows.Forms.Label();
+            this.Panel_Body = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -177,23 +177,23 @@
             this.bnt_Menu_DoanhThu.Text = "Doanh thu";
             this.bnt_Menu_DoanhThu.UseVisualStyleBackColor = false;
             // 
-            // bnt_Menu_TaiKhoan
+            // bnt_Menu_DangXuat
             // 
-            this.bnt_Menu_TaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
-            this.bnt_Menu_TaiKhoan.FlatAppearance.BorderSize = 0;
-            this.bnt_Menu_TaiKhoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AntiqueWhite;
-            this.bnt_Menu_TaiKhoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.bnt_Menu_TaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bnt_Menu_TaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bnt_Menu_TaiKhoan.ForeColor = System.Drawing.Color.Black;
-            this.bnt_Menu_TaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Menu_TaiKhoan.Image")));
-            this.bnt_Menu_TaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bnt_Menu_TaiKhoan.Location = new System.Drawing.Point(0, 514);
-            this.bnt_Menu_TaiKhoan.Name = "bnt_Menu_TaiKhoan";
-            this.bnt_Menu_TaiKhoan.Size = new System.Drawing.Size(160, 43);
-            this.bnt_Menu_TaiKhoan.TabIndex = 8;
-            this.bnt_Menu_TaiKhoan.Text = "Tài khoản";
-            this.bnt_Menu_TaiKhoan.UseVisualStyleBackColor = false;
+            this.bnt_Menu_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(200)))));
+            this.bnt_Menu_DangXuat.FlatAppearance.BorderSize = 0;
+            this.bnt_Menu_DangXuat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AntiqueWhite;
+            this.bnt_Menu_DangXuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.bnt_Menu_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bnt_Menu_DangXuat.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bnt_Menu_DangXuat.ForeColor = System.Drawing.Color.Black;
+            this.bnt_Menu_DangXuat.Image = ((System.Drawing.Image)(resources.GetObject("bnt_Menu_DangXuat.Image")));
+            this.bnt_Menu_DangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnt_Menu_DangXuat.Location = new System.Drawing.Point(0, 514);
+            this.bnt_Menu_DangXuat.Name = "bnt_Menu_DangXuat";
+            this.bnt_Menu_DangXuat.Size = new System.Drawing.Size(160, 36);
+            this.bnt_Menu_DangXuat.TabIndex = 8;
+            this.bnt_Menu_DangXuat.Text = "Đăng xuất";
+            this.bnt_Menu_DangXuat.UseVisualStyleBackColor = false;
             // 
             // bnt_Menu_NhanVien
             // 
@@ -219,7 +219,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lb_tennv);
             this.panel1.Controls.Add(this.bnt_Menu_NhanVien);
-            this.panel1.Controls.Add(this.bnt_Menu_TaiKhoan);
+            this.panel1.Controls.Add(this.bnt_Menu_DangXuat);
             this.panel1.Controls.Add(this.bnt_Menu_DoanhThu);
             this.panel1.Controls.Add(this.bnt_Menu_DanhMuc);
             this.panel1.Controls.Add(this.bnt_Menu_KhachHang);
@@ -234,12 +234,14 @@
             this.panel1.Size = new System.Drawing.Size(160, 591);
             this.panel1.TabIndex = 2;
             // 
-            // Panel_Body
+            // label2
             // 
-            this.Panel_Body.Location = new System.Drawing.Point(438, 114);
-            this.Panel_Body.Name = "Panel_Body";
-            this.Panel_Body.Size = new System.Drawing.Size(200, 100);
-            this.Panel_Body.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 569);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Xin chào ";
             // 
             // lb_tennv
             // 
@@ -250,14 +252,12 @@
             this.lb_tennv.TabIndex = 10;
             this.lb_tennv.Text = "label2";
             // 
-            // label2
+            // Panel_Body
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 569);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Xin chào ";
+            this.Panel_Body.Location = new System.Drawing.Point(438, 114);
+            this.Panel_Body.Name = "Panel_Body";
+            this.Panel_Body.Size = new System.Drawing.Size(200, 100);
+            this.Panel_Body.TabIndex = 3;
             // 
             // frm_TrangChu
             // 
@@ -286,7 +286,7 @@
         private System.Windows.Forms.Button bnt_Menu_HoaDon;
         private System.Windows.Forms.Button bnt_Menu_KhachHang;
         private System.Windows.Forms.Button bnt_Menu_DoanhThu;
-        private System.Windows.Forms.Button bnt_Menu_TaiKhoan;
+        private System.Windows.Forms.Button bnt_Menu_DangXuat;
         private System.Windows.Forms.Button bnt_Menu_NhanVien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Panel_Body;

@@ -19,8 +19,8 @@ namespace GUI
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             _nhanVien = nhanVien;
-           
-
+            var trangchu  = new TrangChu();
+            Panel_Body.Controls.Add(trangchu);
             settable();
             lb_tennv.Text = _nhanVien.TenNhanVien;
             bnt_Menu_NhanVien.Click += Bnt_Menu_NhanVien_Click;
@@ -28,7 +28,60 @@ namespace GUI
             bnt_Menu_ThucDon.Click += Bnt_Menu_ThucDon_Click;
             bnt_Menu_HoaDon.Click += Bnt_Menu_HoaDon_Click;
             bnt_Menu_ThucDon.Click += Bnt_Menu_ThucDon_Click1;
-          
+            bnt_Menu_TrangChu.Click += Bnt_Menu_TrangChu_Click;
+            bnt_Menu_TrangChu.BackColor = Color.White;
+            bnt_Menu_DoanhThu.Click += Bnt_Menu_DoanhThu_Click;
+            bnt_Menu_DangXuat.Click += Bnt_Menu_DangXuat_Click;
+            PhanQuyenTheoChucVu();
+        }
+
+        private void Bnt_Menu_DangXuat_Click(object sender, EventArgs e)
+        {
+            _nhanVien = null;  
+
+            // Ẩn form trang chủ
+            this.Hide();
+
+            // Tạo và hiển thị lại form đăng nhập
+            var loginForm = new frm_DangNhap();
+            loginForm.Show();
+        }
+
+        private void PhanQuyenTheoChucVu()
+        {
+            if (_nhanVien.ChucVu == "Nhân viên") // Kiểm tra nếu là nhân viên
+            {
+                bnt_Menu_NhanVien.Enabled = false;
+                bnt_Menu_DoanhThu.Enabled = false;
+            }
+            else if (_nhanVien.ChucVu == "Admin" || _nhanVien.ChucVu == "Quản lý") // Admin hoặc Quản lý
+            {
+                bnt_Menu_NhanVien.Enabled = true;
+                bnt_Menu_DoanhThu.Enabled = true;
+            }
+        }
+        private void Bnt_Menu_DoanhThu_Click(object sender, EventArgs e)
+        {
+            var doanhthu = new Doanhthu();
+            Panel_Body.Controls.Clear();
+            doanhthu.Dock = DockStyle.Fill;
+            Panel_Body.Controls.Add(doanhthu);
+
+            //************
+            setcolor();
+            bnt_Menu_DoanhThu.BackColor = Color.White;
+        }
+
+        private void Bnt_Menu_TrangChu_Click(object sender, EventArgs e)
+        {
+            var trangchu = new TrangChu();
+            Panel_Body.Controls.Clear();
+            trangchu.Dock = DockStyle.Fill;
+            Panel_Body.Controls.Add(trangchu);
+
+            //************
+            setcolor();
+            bnt_Menu_TrangChu.BackColor = Color.White;
         }
 
         private void Bnt_Menu_ThucDon_Click1(object sender, EventArgs e)
@@ -109,7 +162,7 @@ namespace GUI
             bnt_Menu_ThucDon.BackColor = Color.FromArgb(255, 250, 200);
             bnt_Menu_HoaDon.BackColor = Color.FromArgb(255, 250, 200);
             bnt_Menu_KhachHang.BackColor = Color.FromArgb(255, 250, 200);
-            bnt_Menu_TaiKhoan.BackColor = Color.FromArgb(255, 250, 200);
+            bnt_Menu_DangXuat.BackColor = Color.FromArgb(255, 250, 200);
             bnt_Menu_DoanhThu.BackColor = Color.FromArgb(255, 250, 200);
             bnt_Menu_NhanVien.BackColor = Color.FromArgb(255, 250, 200);
         }
@@ -122,7 +175,7 @@ namespace GUI
             Panel_Body.Controls.Add(control_Danhmuc);
             //************
             setcolor();
-            bnt_Menu_NhanVien.BackColor = Color.White;
+            bnt_Menu_DanhMuc.BackColor = Color.White;
         }
 
         private void bnt_Menu_ThucDon_Click_1(object sender, EventArgs e)

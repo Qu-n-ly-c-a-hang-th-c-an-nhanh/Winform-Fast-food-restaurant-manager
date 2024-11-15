@@ -56,7 +56,7 @@
         <elementListCompartment Id="4a549e8d-1dce-4bb8-909e-16d89e1891f5" absoluteBounds="3.515, 10.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.5 : 3.75); (4.5 : 1.85659912109375); (6.25 : 1.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.5 : 3.75); (4.5 : 1.85659912109375); (6.25 : 1.85659912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/HoaDon/HoaDon_ChiTietHoaDon" />
       <nodes>
         <classShapeMoniker Id="69b01017-d50b-4f00-81bd-4372cd52b08a" />
@@ -70,42 +70,42 @@
         <classShapeMoniker Id="5adce7ee-1707-445d-8e56-e7cc07dfbd69" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 4.82774983723958); (3.5 : 4.82774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 4.82774983723958); (3.5 : 4.82774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/nhanvien/nhanvien_HoaDon" />
       <nodes>
         <classShapeMoniker Id="7f81a966-5643-41ef-90f5-725a0f2529e3" />
         <classShapeMoniker Id="69b01017-d50b-4f00-81bd-4372cd52b08a" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 1.30329956054688); (3.9687475 : 1.30329956054688); (3.9687475 : 3.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.30329956054688); (3.9687475 : 1.30329956054688); (3.9687475 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/KhachHang/KhachHang_HoaDon" />
       <nodes>
         <classShapeMoniker Id="d20de73f-6b00-49ab-8a83-aeaa4419b4c6" />
         <classShapeMoniker Id="69b01017-d50b-4f00-81bd-4372cd52b08a" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 7.5); (5.875 : 7.125); (5.875 : 2.37865068164063); (6.25 : 2.37865068164063)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 7.5); (5.875 : 7.125); (5.875 : 1.85659912109375); (6.25 : 1.85659912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
       <AssociationMoniker Name="/FastFoodDataContext/MonAn/MonAn_ChiTietHoaDon" />
       <nodes>
         <classShapeMoniker Id="e3d2cf41-dceb-4893-a582-77b79b160033" />
         <classShapeMoniker Id="78f75a7c-b864-4ff7-a94c-bd9b6cdf23d4" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 8.51044840494792); (6.25 : 8.51044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 8.51044840494792); (6.25 : 8.51044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/MonAn/MonAn_Kho" />
       <nodes>
         <classShapeMoniker Id="e3d2cf41-dceb-4893-a582-77b79b160033" />
         <classShapeMoniker Id="dcbab072-87b7-4af6-a40f-6d65f033455c" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 8.56814697265625); (3.5 : 8.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 8.56814697265625); (3.5 : 8.56814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/DanhMucMonAn/DanhMucMonAn_MonAn" />
       <nodes>
         <classShapeMoniker Id="00a6928f-d043-43c5-ad72-ebb6b6ca8189" />
         <classShapeMoniker Id="e3d2cf41-dceb-4893-a582-77b79b160033" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 11.4815991210937); (7.25 : 11.4815991210937); (7.25 : 9.39589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 11.4815991210937); (7.25 : 11.4815991210937); (7.25 : 9.39589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/FastFoodDataContext/NhaCungCap/NhaCungCap_Kho" />
       <nodes>
         <classShapeMoniker Id="1d594aad-91b7-496f-9ce8-4e51251388ad" />

@@ -46,7 +46,6 @@ namespace GUI
                 MessageBox.Show("Thêm danh mục thành công!");
             }
         }
-
         private void datagv_danhmuc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var SelectRow = datagv_danhmuc.Rows[e.RowIndex];
@@ -55,8 +54,7 @@ namespace GUI
             textBox1.Text = tendanhmuc;
             string imageFileName = SelectRow.Cells["HinhAnh"].Value.ToString();
 
-            string imageFolderPath = Path.Combine(Application.StartupPath, "Images");
-            string imagePath = Path.Combine(imageFolderPath, imageFileName);
+            string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imageFileName);
 
             if (File.Exists(imagePath))
             {

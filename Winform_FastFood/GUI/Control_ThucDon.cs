@@ -81,22 +81,34 @@ namespace GUI
             textBox2.Text = mota;
             textBox3.Text = gia;
             string imageFileName = SelectRow.Cells["HinhAnh"].Value.ToString();
+ 
+            // Tạo đường dẫn đầy đủ từ thư mục gốc và tên ảnh
+            string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imageFileName);
+            
 
-            string imageFolderPath = Path.Combine(Application.StartupPath, "Images");
-            string imagePath = Path.Combine(imageFolderPath, imageFileName);
-
+            // Kiểm tra xem ảnh có tồn tại không
             if (File.Exists(imagePath))
             {
-                pictureBox1.Image = new Bitmap(imagePath);
+                try
+                {
+                   
+                    pictureBox1.Image = Image.FromFile(imagePath);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Không thể tải ảnh: " + ex.Message);
+                    pictureBox1.Image = null;
+                }
             }
             else
-            {
-                MessageBox.Show("Không tìm thấy ảnh.");
-                pictureBox1.Image = null;
+            {                 
+                    pictureBox1.Image = null;                              
             }
 
             comboBox1.Text = madanhmuc;
         }
+
 
         private void bnt_ThemNV_Click(object sender, EventArgs e)
         {

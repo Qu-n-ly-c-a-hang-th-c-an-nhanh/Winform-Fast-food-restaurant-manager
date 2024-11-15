@@ -69,6 +69,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.lb_tennv);
             this.panel2.Controls.Add(this.lb_gio);
             this.panel2.Controls.Add(this.lb_ngayin);
@@ -118,12 +119,14 @@
             // 
             // luu
             // 
-            this.luu.Location = new System.Drawing.Point(96, 541);
+            this.luu.BackColor = System.Drawing.Color.SteelBlue;
+            this.luu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.luu.Location = new System.Drawing.Point(237, 520);
             this.luu.Name = "luu";
-            this.luu.Size = new System.Drawing.Size(115, 23);
+            this.luu.Size = new System.Drawing.Size(62, 43);
             this.luu.TabIndex = 11;
-            this.luu.Text = "Lưu và xuất hóa đơn";
-            this.luu.UseVisualStyleBackColor = true;
+            this.luu.Text = "Lưu";
+            this.luu.UseVisualStyleBackColor = false;
             // 
             // tongtien
             // 
