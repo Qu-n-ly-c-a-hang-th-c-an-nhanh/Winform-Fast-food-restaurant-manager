@@ -23,7 +23,7 @@ namespace GUI
             this.Dock = DockStyle.Fill;
             this.AutoSize = false;
             Setup();
-
+           
 
             bnt_ThemNV.Click += Bnt_ThemNV_Click;
             bnt_XacNhan_Them.Click += Bnt_XacNhan_Them_Click;

@@ -52,7 +52,7 @@ namespace GUI
                     MessageBox.Show($"Chào mừng {nhanVien.TenNhanVien} đã đăng nhập thành công!");
 
                     // Mở form trang chủ và chuyển qua màn hình chính, truyền thông tin nhân viên
-                    var mainForm = new frm_TrangChu(nhanVien); // Truyền nhân viên vào form TrangChủ
+                    var mainForm = new Home(nhanVien); // Truyền nhân viên vào form TrangChủ
                     mainForm.Show();
                     this.Hide(); // Ẩn form đăng nhập
                 }
@@ -68,6 +68,11 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

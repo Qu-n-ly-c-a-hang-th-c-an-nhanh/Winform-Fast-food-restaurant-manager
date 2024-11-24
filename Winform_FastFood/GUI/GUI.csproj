@@ -36,6 +36,21 @@
     <Reference Include="BLL">
       <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1.Core, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.1.Core.Desktop, Version=24.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
@@ -115,6 +130,7 @@
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -169,17 +185,17 @@
     <Compile Include="Control_NhanVien.Designer.cs">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCphieunhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCphieunhap.Designer.cs">
+      <DependentUpon>UCphieunhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control_ThucDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Control_ThucDon.designer.cs">
       <DependentUpon>Control_ThucDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Contro_MonAnl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Contro_MonAnl.Designer.cs">
-      <DependentUpon>Contro_MonAnl.cs</DependentUpon>
     </Compile>
     <Compile Include="Doanhthu.cs">
       <SubType>UserControl</SubType>
@@ -193,17 +209,11 @@
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_TrangChu.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_TrangChu.Designer.cs">
-      <DependentUpon>frm_TrangChu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MonAnControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MonAnControl.Designer.cs">
-      <DependentUpon>MonAnControl.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,11 +223,23 @@
     <Compile Include="Control_TaiKhoan.Designer.cs">
       <DependentUpon>Control_TaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="TrangChu.cs">
+    <Compile Include="UCmonan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TrangChu.Designer.cs">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <Compile Include="UCmonan.Designer.cs">
+      <DependentUpon>UCmonan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCphieuxuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCphieuxuat.Designer.cs">
+      <DependentUpon>UCphieuxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtonkho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtonkho.Designer.cs">
+      <DependentUpon>UCtonkho.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Control_DanhMuc.resx">
       <DependentUpon>Control_DanhMuc.cs</DependentUpon>
@@ -228,11 +250,11 @@
     <EmbeddedResource Include="Control_NhanVien.resx">
       <DependentUpon>Control_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCphieunhap.resx">
+      <DependentUpon>UCphieunhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control_ThucDon.resx">
       <DependentUpon>Control_ThucDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Contro_MonAnl.resx">
-      <DependentUpon>Contro_MonAnl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doanhthu.resx">
       <DependentUpon>Doanhthu.cs</DependentUpon>
@@ -240,12 +262,10 @@
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_TrangChu.resx">
-      <DependentUpon>frm_TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MonAnControl.resx">
-      <DependentUpon>MonAnControl.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -259,8 +279,14 @@
     <EmbeddedResource Include="Control_TaiKhoan.resx">
       <DependentUpon>Control_TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrangChu.resx">
-      <DependentUpon>TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="UCmonan.resx">
+      <DependentUpon>UCmonan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCphieuxuat.resx">
+      <DependentUpon>UCphieuxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtonkho.resx">
+      <DependentUpon>UCtonkho.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

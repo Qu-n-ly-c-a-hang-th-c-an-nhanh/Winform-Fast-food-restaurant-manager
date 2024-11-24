@@ -4,3 +4,4 @@ D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DTO\bin\Debug\DTO.pdb
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DTO\obj\Debug\DTO.dll
 D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DTO\obj\Debug\DTO.pdb
+D:\Winform-Fast-food-restaurant-manager\Winform_FastFood\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

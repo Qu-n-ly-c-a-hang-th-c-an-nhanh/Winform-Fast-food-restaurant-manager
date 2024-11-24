@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(13, 173);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 64);
+            this.panel1.Size = new System.Drawing.Size(265, 64);
             this.panel1.TabIndex = 3;
             // 
             // label9
@@ -89,9 +89,9 @@
             this.label9.ForeColor = System.Drawing.Color.Green;
             this.label9.Location = new System.Drawing.Point(12, 27);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(24, 20);
+            this.label9.Size = new System.Drawing.Size(66, 20);
             this.label9.TabIndex = 2;
-            this.label9.Text = " 0";
+            this.label9.Text = " 0 VNĐ";
             // 
             // label3
             // 
@@ -100,16 +100,16 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 16);
+            this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Doanh thu theo tháng";
+            this.label3.Text = "Tổng chi ";
             // 
             // cb2
             // 
             this.cb2.FormattingEnabled = true;
             this.cb2.Location = new System.Drawing.Point(92, 48);
             this.cb2.Name = "cb2";
-            this.cb2.Size = new System.Drawing.Size(121, 21);
+            this.cb2.Size = new System.Drawing.Size(186, 21);
             this.cb2.TabIndex = 8;
             // 
             // label2
@@ -125,7 +125,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(386, 15);
+            this.label8.Location = new System.Drawing.Point(430, 51);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(266, 20);
             this.label8.TabIndex = 10;
@@ -138,7 +138,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(13, 305);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(217, 63);
+            this.panel2.Size = new System.Drawing.Size(265, 63);
             this.panel2.TabIndex = 11;
             // 
             // label4
@@ -148,9 +148,9 @@
             this.label4.ForeColor = System.Drawing.Color.Green;
             this.label4.Location = new System.Drawing.Point(12, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 20);
+            this.label4.Size = new System.Drawing.Size(66, 20);
             this.label4.TabIndex = 2;
-            this.label4.Text = " 0";
+            this.label4.Text = " 0 VNĐ";
             // 
             // label5
             // 
@@ -159,18 +159,18 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 16);
+            this.label5.Size = new System.Drawing.Size(81, 16);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Tổng doanh thu ";
+            this.label5.Text = "Doanh thu ";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(13, 243);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(217, 56);
+            this.panel3.Size = new System.Drawing.Size(265, 56);
             this.panel3.TabIndex = 4;
             // 
             // label6
@@ -191,9 +191,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.Location = new System.Drawing.Point(0, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 16);
+            this.label7.Size = new System.Drawing.Size(87, 16);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Tổng số hóa đơn";
+            this.label7.Text = "Số hóa đơn";
             // 
             // panel4
             // 
@@ -202,7 +202,7 @@
             this.panel4.Controls.Add(this.label11);
             this.panel4.Location = new System.Drawing.Point(13, 112);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(217, 58);
+            this.panel4.Size = new System.Drawing.Size(265, 58);
             this.panel4.TabIndex = 12;
             // 
             // label10
@@ -212,9 +212,9 @@
             this.label10.ForeColor = System.Drawing.Color.Green;
             this.label10.Location = new System.Drawing.Point(12, 27);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 20);
+            this.label10.Size = new System.Drawing.Size(66, 20);
             this.label10.TabIndex = 2;
-            this.label10.Text = " 0";
+            this.label10.Text = " 0 VNĐ";
             // 
             // label11
             // 
@@ -223,23 +223,23 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label11.Location = new System.Drawing.Point(0, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(163, 16);
+            this.label11.Size = new System.Drawing.Size(72, 16);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Số hóa đơn theo tháng";
+            this.label11.Text = "Tổng thu ";
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(236, 38);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(303, 77);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(647, 310);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(711, 310);
             this.chart1.TabIndex = 13;
             this.chart1.Text = "chart1";
             // 
@@ -247,18 +247,18 @@
             // 
             this.hoadon.BackgroundColor = System.Drawing.Color.White;
             this.hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.hoadon.Location = new System.Drawing.Point(0, 390);
+            this.hoadon.Location = new System.Drawing.Point(6, 390);
             this.hoadon.Name = "hoadon";
-            this.hoadon.Size = new System.Drawing.Size(350, 193);
+            this.hoadon.Size = new System.Drawing.Size(479, 235);
             this.hoadon.TabIndex = 14;
             // 
             // chitiet
             // 
             this.chitiet.BackgroundColor = System.Drawing.Color.White;
             this.chitiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.chitiet.Location = new System.Drawing.Point(356, 390);
+            this.chitiet.Location = new System.Drawing.Point(491, 390);
             this.chitiet.Name = "chitiet";
-            this.chitiet.Size = new System.Drawing.Size(508, 193);
+            this.chitiet.Size = new System.Drawing.Size(523, 235);
             this.chitiet.TabIndex = 15;
             // 
             // label12
@@ -267,9 +267,9 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label12.Location = new System.Drawing.Point(3, 371);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 16);
+            this.label12.Size = new System.Drawing.Size(148, 16);
             this.label12.TabIndex = 16;
-            this.label12.Text = "Hóa đơn";
+            this.label12.Text = "Hóa đơn trong tháng";
             // 
             // label13
             // 
@@ -286,14 +286,14 @@
             this.cb1.FormattingEnabled = true;
             this.cb1.Location = new System.Drawing.Point(92, 12);
             this.cb1.Name = "cb1";
-            this.cb1.Size = new System.Drawing.Size(121, 21);
+            this.cb1.Size = new System.Drawing.Size(186, 21);
             this.cb1.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Purple;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(90, 75);
+            this.button1.Location = new System.Drawing.Point(192, 77);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 26);
             this.button1.TabIndex = 18;
@@ -321,7 +321,7 @@
             this.Controls.Add(this.cb1);
             this.Controls.Add(this.label1);
             this.Name = "Doanhthu";
-            this.Size = new System.Drawing.Size(870, 586);
+            this.Size = new System.Drawing.Size(1026, 628);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

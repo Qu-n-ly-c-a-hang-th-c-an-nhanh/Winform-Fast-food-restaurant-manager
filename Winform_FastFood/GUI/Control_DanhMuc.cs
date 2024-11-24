@@ -18,6 +18,7 @@ namespace GUI
        // private readonly FastFoodDataContext db;
         public Control_DanhMuc()
         {
+         
             InitializeComponent();
             LoadData();
         }
@@ -29,6 +30,7 @@ namespace GUI
                 var danhmuc = db.DanhMucMonAns.ToList();
 
                 datagv_danhmuc.DataSource = danhmuc;
+                datagv_danhmuc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
         private void AddCategory(string tenDanhMuc)
